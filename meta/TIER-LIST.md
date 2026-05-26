@@ -15,7 +15,7 @@
 | **C** | 有更好选择,但有人喜欢 |
 | **F** | 不建议 |
 
-完整标准 → [GOVERNANCE.md](./GOVERNANCE.md)
+完整标准 → [GOVERNANCE.md](../GOVERNANCE.md)
 
 ---
 

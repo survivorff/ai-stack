@@ -1,0 +1,25 @@
+name: Content Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # need full history for git ls-files
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run content lint
+        run: |
+          node scripts/lint.mjs
+        # Lint exits 1 on errors; this fails the check.
+        # Warnings are visible in the log but don't block.

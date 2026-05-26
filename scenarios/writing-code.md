@@ -61,7 +61,7 @@ next_review: 2026-08-22
 
 **适合**: 改 1-3 个文件,或熟悉的框架内迭代
 **时间投入**: 30 分钟 - 2 小时
-**只用工具**: [Cursor](../tools/coding/cursor.md) Pro
+**只用工具**: [Cursor](../tools/ide/cursor.md) Pro
 
 **步骤**:
 1. `Cmd+L` 跟它讨论清楚再动
@@ -71,7 +71,7 @@ next_review: 2026-08-22
 ### 🥉 方案 C:终端党 / 长任务
 
 **适合**: > 30 文件的重构、复杂工程问题
-**只用工具**: [Claude Code](../tools/coding/claude-code.md) Pro + 本地 `CLAUDE.md`
+**只用工具**: [Claude Code](../tools/coding-agent/claude-code.md) Pro + 本地 `CLAUDE.md`
 
 ---
 

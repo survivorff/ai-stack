@@ -86,12 +86,75 @@
 提交 PR 前自查:
 
 - [ ] frontmatter 所有 required 字段都填了
+- [ ] frontmatter **包在 `<!-- ... -->` 注释里**(GitHub 不渲染丑表格)
 - [ ] `last_verified` 是今天日期
 - [ ] `next_review` 在 `last_verified` 后 90 天
 - [ ] 标了 `china_availability`
 - [ ] 写了"它不擅长什么"
 - [ ] 用了 `_templates/` 里的模板,没自创结构
+- [ ] **跑了 `node scripts/lint.mjs` 通过**(0 errors)
 - [ ] PR 标题格式:`[Add/Update] <type>/<slug>`(例:`[Add] tool/cursor`)
+
+---
+
+## 自动化脚本
+
+仓库内置几个脚本帮你保质量。**所有脚本都是零依赖的 ES module**(只用 Node 内置 + git),不需要 npm install。
+
+### `scripts/lint.mjs` — 内容健康检查
+
+**用法**:
+
+\`\`\`bash
+node scripts/lint.mjs                    # 全仓库
+node scripts/lint.mjs scenarios/         # 单个目录
+node scripts/lint.mjs tools/foundation-models/claude.md   # 单个文件
+\`\`\`
+
+**检查项**:
+- frontmatter 必备字段(status / last_verified / next_review)
+- frontmatter 必须包在 \`<!-- ... -->\` 注释里
+- \`last_verified\` 在过去 6 个月内(超过 → 标 outdated)
+- \`next_review\` 在 \`last_verified\` 之后
+- \`tier\` 必须是 S / A+ / A / A- / B+ / B / C / F 之一
+- \`china_availability\` 必须含 🟢🟡🔴 之一
+- **所有 markdown 内部链接都能解析到真实文件**(死链立即报错)
+
+**CI 集成**:每个 PR / push 自动跑(见 \`.github/workflows/lint.yml\`)。**lint 不过 = PR 不能合并**。
+
+### \`scripts/hide-frontmatter.mjs\` — 自动包注释
+
+新写的内容文件如果忘了把 frontmatter 包在 \`<!-- ... -->\` 里,跑这个脚本一键修:
+
+\`\`\`bash
+node scripts/hide-frontmatter.mjs
+\`\`\`
+
+幂等(已经包了的文件会自动跳过)。
+
+### \`scripts/scaffold-scenarios.mjs\` — 生成场景骨架
+
+如果你新加了一个场景到 \`scenarios/README.md\` 但还没写完整内容,这个脚本会:
+- 生成 \`scenarios/<slug>.md\` stub 文件
+- 含完整 frontmatter + 骨架结构 + "待写"提示
+- 标 \`status: draft\`(让 lint 知道这是 stub)
+
+\`\`\`bash
+# 把新场景加到 scripts/scaffold-scenarios.mjs 顶部的 SCENARIOS 数组
+# 然后跑:
+node scripts/scaffold-scenarios.mjs           # 跳过已存在
+node scripts/scaffold-scenarios.mjs --force   # 覆盖所有(慎用)
+\`\`\`
+
+**为什么要这样**:防止"角色页 / 工具页引用了一个还没写的场景"导致死链。**先建占位,内容稍后补**。
+
+### \`scripts/scaffold-tool-stubs.mjs\` — 生成工具占位
+
+类似上面,但针对工具页。当一个工具已经被其他完整内容引用,但还没深拆时,生成占位:
+
+\`\`\`bash
+node scripts/scaffold-tool-stubs.mjs
+\`\`\`
 
 ---
 

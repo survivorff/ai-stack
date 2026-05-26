@@ -4,6 +4,99 @@
 
 ---
 
+## [v2026.05.3] - 2026-05-26(质量 + 扩展性)
+
+### 🆕 新增 — 工作流(workflows/)
+
+**6 个完整工作流 v1**(每个都是亲跑过 + 含真实 prompt 模板 + 时间和成本):
+
+- ✅ [Spec → 实现 → 测试 → 文档](../workflows/spec-to-code.md) — 程序员日常事实标准
+- ✅ [古早项目 2 小时上手](../workflows/codebase-onboarding.md) — 接手老项目流水线
+- ✅ [一个 Bug 的完整 debug 链路](../workflows/bug-hunt.md) — Debug 流水线
+- ✅ [长文写作完整流水线](../workflows/long-form-pipeline.md) — 跨多平台改编
+- ✅ [短视频脚本 → 制作 → 发布](../workflows/short-video-pipeline.md) — 自媒体生产线
+- ✅ [论文消化完整流水线](../workflows/paper-digesting-pipeline.md) — 学生 / 研究员
+
+每个工作流都包含:
+- 完整工具栈 + 国内 / 海外两套替代方案
+- 完整 step 拆解 + 每步具体 prompt
+- 时间和成本(分平台 / 分预算)
+- 进阶变种(简化版 / 重度版)
+- 边界(什么时候不适用)
+- 实施前 checklist
+
+### 🆕 新增 — 41 个场景骨架(scenarios/)
+
+通过 `scripts/scaffold-scenarios.mjs` 自动生成,**避免角色页 / 工具页跨引用死链**:
+
+每个 stub:
+- 完整 frontmatter
+- 痛点列表
+- 推荐工具入口
+- 标 `status: draft`,提示"完整内容月度更新中"
+
+下次月度 release 把头部 5-10 个场景写成完整版。
+
+### 🆕 新增 — 6 个工具占位(tools/)
+
+通过 `scripts/scaffold-tool-stubs.mjs` 生成:
+- ideogram / firefly / sdxl(image-gen)
+- music-02(audio)
+- tana(notes)
+- xunfei-zhiwen(ppt)
+
+### 🛠 新增 — 自动化脚本(scripts/)
+
+**这是仓库长期可维护的关键基础设施**:
+
+- ✅ `scripts/lint.mjs` — 内容健康检查
+  - frontmatter 必备字段
+  - 注释包裹强制
+  - 日期合理性
+  - 内部链接死链检查
+  - tier / china_availability 取值校验
+- ✅ `scripts/hide-frontmatter.mjs` — 自动包注释(已有)
+- ✅ `scripts/scaffold-scenarios.mjs` — 场景骨架生成
+- ✅ `scripts/scaffold-tool-stubs.mjs` — 工具占位生成
+
+所有脚本零依赖(纯 Node 内置 + git),不需要 \`npm install\`。
+
+### 🛠 新增 — GitHub Actions
+
+- `.github/workflows/lint.yml` — PR / push 自动跑 lint,**死链 / 元数据错误自动拦截 PR**
+
+### 🔧 修复
+
+- 修了 14 处死链(从 213 个 errors 降到 0 errors)
+- `scenarios/writing-code.md` 旧路径更新为新结构(coding-agent / ide)
+- `meta/CHANGELOG.md` + `meta/TIER-LIST.md` 的 GOVERNANCE.md 路径修正
+
+### 🔧 改善
+
+- CONTRIBUTING.md 加入"自动化脚本"完整说明(让贡献者知道有哪些工具)
+- workflows/README.md 加入"工作流 vs 场景 vs 工具"概念区分
+
+### 📊 进度统计
+
+```
+角色:          9 个(1 完整 / 8 可用)
+场景:           7 完整 + 41 骨架 = 48 个
+工具:           36 篇深度 + 12 篇占位 + 6 篇 README 级
+工作流:         6 个完整(从 0 到 6)
+脚本:           4 个自动化脚本
+GitHub Actions: 1 个 lint workflow
+总 markdown:    ~25000 行(从 ~15000 涨到 ~25000)
+```
+
+### 🎯 下一阶段(v2026.06)
+
+- 把"高频场景"5-10 个从骨架写成完整版(prd-writing / making-ppt / cover-image / market-research / paper-digesting 等)
+- 头部分类的"次档工具"补深拆(Ideogram 完整版 / Firefly 完整版等)
+- 添加"按预算找工具"导航页(/budget/zero-yuan/、/budget/100-yuan/、...)
+- 月度 release 流程实战:发 v2026.06 release notes
+
+---
+
 ## [v2026.05.2] - 2026-05-26(大批量更新)
 
 ### 🆕 新增内容(36 篇)
@@ -96,7 +189,7 @@
 ### 🏗 架构
 
 - 确立**三层信息架构**:Roles → Scenarios → Tools/Workflows
-- 写完 [GOVERNANCE.md](./GOVERNANCE.md):项目治理、内容铁律、月更机制
+- 写完 [GOVERNANCE.md](../GOVERNANCE.md):项目治理、内容铁律、月更机制
 - 写完 [SCHEMA.md](./SCHEMA.md):所有内容的元数据规范
 - 写完 [DECISIONS.md](./DECISIONS.md):架构决策记录(ADR)
 
