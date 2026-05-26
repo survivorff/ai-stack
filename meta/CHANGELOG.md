@@ -4,6 +4,54 @@
 
 ---
 
+## [v2026.05.2] - 2026-05-26(大批量更新)
+
+### 🆕 新增内容(36 篇)
+
+**编程相关 4 个分类全部完成 v1**:
+- ✅ Coding Agent 4 篇:claude-code / codex-cli / aider / devin
+- ✅ AI IDE 4 篇:cursor / windsurf / kiro / trae
+- ✅ Code Completion 3 篇:github-copilot / tongyi-lingma / tabnine
+
+**程序员剩余 6 个场景全部上线**:
+- ✅ debugging / reading-codebase / code-review / api-design / writing-tech-doc / tech-research
+
+**媒体生成分类完成 v1(8 篇)**:
+- ✅ Image-gen 4 篇:midjourney / flux / nano-banana / jimeng
+- ✅ Video-gen 4 篇:sora / veo / kling / hailuo
+
+**音频 / 研究 / 笔记 / PPT / 翻译(11 篇)**:
+- ✅ Audio 3 篇:suno / elevenlabs / speech-02
+- ✅ Research 3 篇:perplexity / mita / notebook-lm
+- ✅ Notes 3 篇:notion-ai / obsidian / feishu-ai
+- ✅ PPT 2 篇:gamma / meitu-ai-ppt
+- ✅ Translation 2 篇:deepl / immersive-translate
+
+**剩余分类先做 README 级覆盖**(避免空目录,详细工具页排队中):
+- writing / reading / design / data / learning / ai-agent
+
+**8 个角色页从骨架填充到可用**:
+- product-manager / designer / marketer / creator / founder / office-worker / student / educator
+- 每个角色页都有:场景索引 + 工具组合 + 不同档位预算建议
+
+### 📊 进度统计
+
+```
+角色:        9 个 (1 完整 / 8 可用)
+场景:        ~40 (7 完整 / 33 待补)
+工具笔记:    36 篇深度 + 6 篇 README 级
+工作流:      0 (下一阶段)
+总内容:      ~15000 行 markdown
+```
+
+### 🎯 下一阶段(v2026.06)
+
+- 程序员之外的角色继续填充各自核心场景(prd-writing / making-ppt / cover-image / paper-digesting 等)
+- 工作流(workflows)首批上线 3-5 个
+- 各分类的次档工具(B+/B 级)按需补充
+
+---
+
 ## [v2026.05.1] - 2026-05-26(增量更新)
 
 ### 🆕 新增内容
