@@ -23,12 +23,10 @@
 
 | 工具 | Tier | 国内 | 月费 | 模型 | 形态 |
 |------|:---:|:---:|------|------|------|
-| [Claude Code](./claude-code.md) | **S** | 🟡 | $17-200 | Claude Sonnet 4.7 | CLI |
-| [Codex CLI](./codex-cli.md) | **A+** | 🟡 | $20+ | GPT-5.x | CLI |
-| [Aider](./aider.md) | **A** | 🟢 | 免费(自带 API key) | 任意 | CLI + git |
-| [Devin](./devin.md) | **B** | 🟡 | $500/mo | 自家 + GPT/Claude | 远程 agent |
-| Cursor Agent (CLI) | **B+** | 🟢 | 含 Cursor Pro | 多模型 | CLI |
-| Codeium Agent | **B** | 🟢 | 免费/付费 | 多模型 | CLI |
+| [Claude Code](./claude-code.md) | **S** | 🟡 | $20-200 | Claude Sonnet/Opus 4.7 | CLI |
+| [Codex CLI](./codex-cli.md) | **A+** | 🟡 | $20-200 | GPT-5 / Pro / mini | CLI |
+| [Aider](./aider.md) | **A+** | 🟢 | 工具免费 + 模型 ¥10/mo 起 | **任意!**(DeepSeek/Kimi/Claude/GPT/Ollama) | CLI + git |
+| [Devin](./devin.md) | **B** | 🟡 | $20-500/mo | 自家 + Claude/GPT 混合 | 云端异步 |
 
 > 详细笔记 → 各工具页
 
@@ -89,13 +87,12 @@ Devin(评估中)                   — 高单价但能跑独立任务
 
 ---
 
-## 我盯着的工具(待详写)
+## 我盯着的工具
 
-- [ ] [claude-code.md](./claude-code.md) — Anthropic 出的 CLI agent
-- [ ] [codex-cli.md](./codex-cli.md) — OpenAI 重启的 CLI agent(2025-2026)
-- [ ] [aider.md](./aider.md) — 开源 + git 深度集成
-- [ ] [devin.md](./devin.md) — 完全自主 agent($500/mo)
-- [ ] [cursor-agent.md](./cursor-agent.md) — Cursor 的 CLI 模式
+- [x] [claude-code.md](./claude-code.md) — Anthropic 出的 CLI agent(行业事实标准)
+- [x] [codex-cli.md](./codex-cli.md) — OpenAI 重启的 CLI agent
+- [x] [aider.md](./aider.md) — 开源 + git 深度集成 + 模型完全自由
+- [x] [devin.md](./devin.md) — Cognition 出的"完全自主"云端 agent
 
 ---
 
