@@ -91,9 +91,9 @@ related_roles:
 
 | 工具 | Tier | 国内 | 主用 |
 |------|:---:|:---:|------|
-| [GitHub Copilot](../../tools/code-completion/github-copilot.md) | **A** | 🟡 | 团队 GitHub 生态 |
-| [通义灵码](../../tools/code-completion/tongyi-lingma.md) | **A** | 🟢 | 国产首选,免费 |
-| [Codeium](../../tools/code-completion/codeium-completion.md) | **B+** | 🟢 | 完全免费 |
+| [通义灵码](../../tools/code-completion/tongyi-lingma.md) | **A+** | 🟢 | 国产首选,完全免费 |
+| [GitHub Copilot](../../tools/code-completion/github-copilot.md) | **A** | 🟡 | 团队合规 + 学生免费 |
+| [Tabnine](../../tools/code-completion/tabnine.md) | **B+** | 🟢 | 私有部署 / 强合规 |
 
 > 完整 Tier List 见 [meta/TIER-LIST.md](../../meta/TIER-LIST.md)
 > 关于"模型 / IDE / Agent / 补全"的概念区分,见 [tools/README.md](../../tools/README.md)

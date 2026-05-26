@@ -13,12 +13,12 @@
 | 场景 | 主要角色 | 状态 |
 |------|---------|:---:|
 | [写代码 / 实现新功能](./writing-code.md) | developer, founder | ✅ |
-| [Debug 复杂 bug](./debugging.md) | developer | 🟡 |
-| [读懂老项目](./reading-codebase.md) | developer | 🟡 |
-| [写技术文档](./writing-tech-doc.md) | developer | 🟡 |
-| [代码 Review](./code-review.md) | developer | 🟡 |
-| [API / 架构设计](./api-design.md) | developer | 🟡 |
-| [技术调研 / 学新领域](./tech-research.md) | developer, founder | 🟡 |
+| [Debug 复杂 bug](./debugging.md) | developer | ✅ |
+| [读懂老项目](./reading-codebase.md) | developer | ✅ |
+| [写技术文档](./writing-tech-doc.md) | developer | ✅ |
+| [代码 Review](./code-review.md) | developer | ✅ |
+| [API / 架构设计](./api-design.md) | developer | ✅ |
+| [技术调研 / 学新领域](./tech-research.md) | developer, founder | ✅ |
 
 ### 📋 产品 / 创业
 
