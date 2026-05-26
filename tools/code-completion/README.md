@@ -25,11 +25,19 @@
 
 | 工具 | Tier | 国内 | 月费 | 长板 |
 |------|:---:|:---:|------|------|
-| [GitHub Copilot](./github-copilot.md) | **A** | 🟡 | $10-19 | 团队 GitHub 生态 |
-| [Tabnine](./tabnine.md) | **A** | 🟢 | 免费/$12 | 私有部署友好 |
-| [通义灵码](./tongyi-lingma.md) | **A** | 🟢 | 免费 | 国产首选,中文 IDE |
-| [文心快码](./wenxin-kuaima.md) | **B+** | 🟢 | 免费 | 百度生态 |
-| [Codeium](./codeium-completion.md) | **B+** | 🟢 | 免费 | 完全免费 |
+| [通义灵码](./tongyi-lingma.md) | **A+** | 🟢 | **免费** | 国产首选,完全免费 |
+| [GitHub Copilot](./github-copilot.md) | **A** | 🟡 | $0-39(学生免费) | 团队合规 + GitHub 生态 + PR Review |
+| [Tabnine](./tabnine.md) | **B+** | 🟢 | $0-39 | 私有部署 / 强合规 |
+
+> 详细笔记 → 各工具页
+
+---
+
+## 待写工具(尚未详细评估)
+
+- 文心快码(百度,B+ 档)
+- 字节豆包代码(B,补全场景下被通义灵码挤压)
+- Codeium(已演化为 Windsurf,见 ide/windsurf.md)
 
 ---
 
@@ -57,12 +65,11 @@
 
 ---
 
-## 待详写
+## 已写工具
 
-- [ ] github-copilot.md
-- [ ] tongyi-lingma.md
-- [ ] codeium-completion.md
-- [ ] tabnine.md
+- [x] [github-copilot.md](./github-copilot.md) — 老牌 + 团队合规 + 学生免费
+- [x] [tongyi-lingma.md](./tongyi-lingma.md) — 国产首选,完全免费
+- [x] [tabnine.md](./tabnine.md) — 私有部署 / 强合规场景
 
 ---
 
