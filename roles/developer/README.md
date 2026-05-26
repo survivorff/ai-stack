@@ -60,18 +60,41 @@ related_roles:
 
 ## 这个角色我盯着的工具(2026-05)
 
-| 工具 | Tier | 国内 | 我的主用场景 |
-|------|:---:|:---:|------------|
-| [Cursor](../../tools/coding/cursor.md) | **S** | 🟢 | 主 IDE,日常 90% 编程 |
-| [Claude Code](../../tools/coding/claude-code.md) | **S** | 🟡 | 长任务、多文件重构 |
-| [Kiro](../../tools/coding/kiro.md) | **A+** | 🟢 | Spec 驱动新功能 |
-| [Windsurf](../../tools/coding/windsurf.md) | **A** | 🟢 | Cursor 平替,JetBrains 党 |
-| [GitHub Copilot](../../tools/coding/github-copilot.md) | **A** | 🟡 | 团队 GitHub 生态 |
-| [通义灵码](../../tools/coding/tongyi-lingma.md) | **A** | 🟢 | 国产首选,免费 |
-| [Aider](../../tools/coding/aider.md) | **B+** | 🟢 | CLI 党 + Git 集成 |
-| [Devin](../../tools/coding/devin.md) | **C** | 🟡 | 自主 agent,贵且不稳 |
+### 🧠 模型层
+
+| 模型 | Tier | 国内 | 我的主用 |
+|------|:---:|:---:|---------|
+| [Claude Sonnet 4.7](../../tools/foundation-models/claude.md) | **S** | 🟡 | 写代码 + 长任务首选模型 |
+| [DeepSeek V4](../../tools/foundation-models/deepseek.md) | **S** | 🟢 | 国产首选,极便宜 + 推理强 |
+| [GPT-5.x](../../tools/foundation-models/chatgpt.md) | **A** | 🟡 | 通用对照 |
+
+### 💻 IDE 层(看着 AI 写代码)
+
+| 工具 | Tier | 国内 | 主用场景 |
+|------|:---:|:---:|---------|
+| [Cursor](../../tools/ide/cursor.md) | **S** | 🟢 | 主 IDE,日常 90% 编程 |
+| [Windsurf](../../tools/ide/windsurf.md) | **A+** | 🟢 | Cursor 平替 |
+| [Kiro](../../tools/ide/kiro.md) | **A** | 🟢 | Spec 驱动新功能 |
+| [Trae(字节)](../../tools/ide/trae.md) | **A** | 🟢 | 国产首选,中文友好 |
+
+### 🤖 Coding Agent(让 AI 自己跑长任务)
+
+| 工具 | Tier | 国内 | 主用场景 |
+|------|:---:|:---:|---------|
+| [Claude Code](../../tools/coding-agent/claude-code.md) | **S** | 🟡 | 长任务 / 大重构 / 跨多文件 |
+| [Codex CLI](../../tools/coding-agent/codex-cli.md) | **A+** | 🟡 | OpenAI 重启,GPT-5.x |
+| [Aider](../../tools/coding-agent/aider.md) | **A** | 🟢 | 开源 + git 集成,任意模型 |
+
+### ⚡ 轻量补全(IDE 内联补全)
+
+| 工具 | Tier | 国内 | 主用 |
+|------|:---:|:---:|------|
+| [GitHub Copilot](../../tools/code-completion/github-copilot.md) | **A** | 🟡 | 团队 GitHub 生态 |
+| [通义灵码](../../tools/code-completion/tongyi-lingma.md) | **A** | 🟢 | 国产首选,免费 |
+| [Codeium](../../tools/code-completion/codeium-completion.md) | **B+** | 🟢 | 完全免费 |
 
 > 完整 Tier List 见 [meta/TIER-LIST.md](../../meta/TIER-LIST.md)
+> 关于"模型 / IDE / Agent / 补全"的概念区分,见 [tools/README.md](../../tools/README.md)
 
 ---
 

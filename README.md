@@ -47,7 +47,7 @@
 如果你已经知道工具名,直接看深度笔记:
 
 - [所有工具 Tier List](./meta/TIER-LIST.md)
-- [按工具类型分类](./tools/)
+- [按工具类型分类](./tools/) — **重点:理清"模型 / Coding Agent / IDE / 补全"四类的区别**
 - [国内可用性总表](./meta/CHINA-AVAILABILITY.md)
 
 ---
@@ -133,22 +133,24 @@ ai-stack/
 ├── scenarios/           # 跨角色场景(按"我要做什么"找)
 │   └── *.md
 │
-├── tools/               # 工具深度笔记
-│   ├── chat-assistant/  # 对话助手(Claude / GPT / Gemini / 国产)
-│   ├── coding/          # 编程
-│   ├── image-gen/       # 文生图
-│   ├── video-gen/       # 文生视频
-│   ├── audio/           # 音频 / 配音 / 音乐
-│   ├── writing/         # 长文写作
-│   ├── notes/           # 笔记 / 第二大脑
-│   ├── research/        # 搜索 / 研究
-│   ├── reading/         # 阅读 / 论文消化
-│   ├── ppt/             # 演示文稿
-│   ├── design/          # 设计
-│   ├── translation/     # 翻译
-│   ├── data/            # 数据分析
-│   ├── ai-agent/        # Agent / 自动化
-│   └── learning/        # 学习
+├── tools/               # 工具深度笔记(按"工具类型"找)
+│   ├── foundation-models/   # 基础模型(Claude / GPT / Gemini / DeepSeek / Kimi 等)
+│   ├── coding-agent/        # 模型 + Agent(Claude Code / Codex CLI / Aider / Devin)
+│   ├── ide/                 # AI IDE(Cursor / Windsurf / Kiro / Trae)
+│   ├── code-completion/     # 补全插件(Copilot / 通义灵码 / Tabnine)
+│   ├── ai-agent/            # 通用 Agent / 自动化框架(非编程专用)
+│   ├── image-gen/           # 文生图
+│   ├── video-gen/           # 文生视频
+│   ├── audio/               # 音频 / TTS / 音乐
+│   ├── writing/             # 长文写作产品
+│   ├── notes/               # 笔记 / 第二大脑
+│   ├── research/            # 搜索 / 研究
+│   ├── reading/             # 阅读 / 论文消化
+│   ├── ppt/                 # 演示文稿
+│   ├── design/              # 设计
+│   ├── translation/         # 翻译
+│   ├── data/                # 数据分析
+│   └── learning/            # 学习
 │
 ├── workflows/           # 工具组合的完整工作流
 │   └── *.md

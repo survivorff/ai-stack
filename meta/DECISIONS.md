@@ -150,3 +150,59 @@ AI 工具站普遍商业模式是 affiliate 或厂商付费置顶。这导致内
 负面:
 - ...
 ```
+
+
+---
+
+## ADR-005:编程相关工具拆成 4 个分类(模型 / agent / IDE / 补全)
+
+**Date**: 2026-05-22
+**Status**: Accepted
+**Supersedes**: ADR-001 中"按工具类型分"的早期实现(原 `tools/coding/` 单分类)
+
+### Context
+
+第一版我们建了 `tools/coding/`,把 Cursor / Claude Code / Kiro 一起放。
+但用户提醒(很对):**它们不在同一层级**。
+
+- **Claude Code = Anthropic 模型 + 一套 agent 工具(read/write/bash/edit)**,本质是 "模型 + 工具" 组合
+- **Cursor / Windsurf / Kiro = IDE 产品**,本身不做模型,底层调 Claude / GPT / Gemini
+- **GitHub Copilot / 通义灵码 = 补全插件**,被动建议
+- **Claude / GPT / Gemini / DeepSeek / Kimi = 基础模型**,所有上层产品的"大脑"
+
+如果不分开,会有几个问题:
+- 用户找不到"我该看哪一类"
+- 同一个产品(如 Claude)在多个分类被重复讲
+- 概念混淆(初学者真的会觉得"Cursor = 一个模型")
+
+### Decision
+
+把编程 / 模型相关工具拆成 4 个分类:
+
+| 分类 | 是什么 | 例子 |
+|------|------|------|
+| `tools/foundation-models/` | 基础模型本身(及厂商自家产品) | Claude / GPT / Gemini / DeepSeek / Kimi / GLM |
+| `tools/coding-agent/` | 模型 + agent 工具组合 | Claude Code / Codex CLI / Aider / Devin |
+| `tools/ide/` | AI 加持的 IDE 产品 | Cursor / Windsurf / Kiro / Trae / Zed |
+| `tools/code-completion/` | 轻量补全插件 | Copilot / Tabnine / 通义灵码 / 文心快码 |
+
+每个工具页明确归属一个分类。模型类工具(如 Claude)在 `foundation-models/` 是主页,在其他分类用引用方式提及。
+
+### Consequences
+
+正面:
+- **概念清晰**:用户能正确理解"模型 vs 产品"的区别
+- **新人不困惑**:不会觉得 Cursor 和 Claude 是竞品
+- **工具可复用**:Claude 模型页 → 在 coding-agent 的 Claude Code 页引用
+- **扩展性更好**:未来新增 Anthropic / OpenAI / Google 新产品时,放对位置
+
+负面:
+- 用户多一个心智模型("4 个编程相关分类")
+- README 需要"决策树"帮助路由
+
+### 实施
+
+- 重命名 `tools/chat-assistant/` → `tools/foundation-models/`
+- 删除 `tools/coding/`
+- 新建 `tools/coding-agent/` `tools/ide/` `tools/code-completion/`
+- 各 README 互相链接,顶层 tools/README.md 画清楚四者关系
