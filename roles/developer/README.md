@@ -1,3 +1,4 @@
+<!--
 ---
 type: role
 slug: developer
@@ -23,6 +24,7 @@ related_roles:
   - designer
   - founder
 ---
+-->
 
 # 💻 程序员 / 工程师
 

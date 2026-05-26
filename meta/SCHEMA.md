@@ -5,14 +5,49 @@
 
 ---
 
+## ⚠️ 重要:frontmatter 必须包在 HTML 注释里
+
+GitHub 会把 YAML frontmatter 渲染成一张巨大的丑表格,严重影响阅读体验。
+**所有内容文件的 frontmatter 必须包在 `<!-- ... -->` 里**,这样 GitHub 完全不渲染,但 lint 脚本和原生 markdown 工具仍能解析。
+
+✅ **正确写法**:
+
+```markdown
+<!--
+---
+type: tool
+slug: claude
+status: verified
+last_verified: 2026-05-22
+next_review: 2026-08-22
+-->
+
+# Claude
+
+正文从这里开始……
+```
+
+❌ **错误写法**(直接裸露的 frontmatter,GitHub 会渲染成大表格):
+
+```markdown
+---
+type: tool
+slug: claude
+---
+
+# Claude
+```
+
+> 例外:`.github/ISSUE_TEMPLATE/*.md` 必须用裸 frontmatter,这是 GitHub 模板要求,不要改。
+
+---
+
 ## 通用字段(所有内容必填)
 
 ```yaml
----
 status: draft | verified | outdated | archived
 last_verified: 2026-05-22
 next_review: 2026-08-22  # 默认 last_verified + 90 天
----
 ```
 
 | 字段 | 类型 | 必填 | 说明 |
@@ -144,18 +179,27 @@ next_review: 2026-08-22
 ---
 ```
 
-**正文结构**:
-1. `# <name>`
-2. 一句话定位
-3. **基本信息表**(从 frontmatter 渲染)
-4. **Tier 评级理由**
-5. **它最适合做什么**(具体场景)
-6. **它不擅长什么**(独家字段,必填)
-7. **真实使用 tips**(从经验提炼)
-8. **替代方案**(链到 alternatives)
-9. **价格分析**
-10. **国内用户注意**(如适用)
-11. **版本变化追踪**
+**正文结构(参考思路,不强制)**:
+- 一句话定位 + Tier
+- 它最擅长什么(具体场景,不是抽象介绍)
+- **它不擅长什么**(必写,这是仓库的差异化)
+- 真实使用 tips(从经验提炼)
+- 价格分析 + 预算建议
+- 国内用户注意(如适用)
+- 版本变化追踪(如已知)
+
+**铁律**(无论怎么写,必须满足):
+- ✅ 必有"它不擅长什么"段落
+- ✅ 必标 `china_availability`
+- ✅ 必有清晰的 Tier 评级理由
+- ✅ 不复制官方介绍语
+- ❌ 不写"通用问答""无所不能"这类抽象描述
+
+具体写法**因工具特点而异**:
+- 模型类(Claude / GPT / DeepSeek)→ 重点写能力边界、上下文、定价档位、国内访问
+- IDE 类(Cursor / Kiro)→ 重点写工作流、quirks、和模型的解耦关系
+- 图像/视频类 → 重点写模型版本、prompt 风格、商用版权
+- Coding Agent(Claude Code / Codex CLI)→ 重点写 agent loop、context 管理、和 IDE 的差异
 
 ---
 

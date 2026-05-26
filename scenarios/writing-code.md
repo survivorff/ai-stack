@@ -1,3 +1,4 @@
+<!--
 ---
 type: scenario
 slug: writing-code
@@ -20,6 +21,7 @@ status: verified
 last_verified: 2026-05-22
 next_review: 2026-08-22
 ---
+-->
 
 # 💻 写代码 / 实现新功能
 

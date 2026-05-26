@@ -1,3 +1,4 @@
+<!--
 ---
 type: role
 slug: product-manager
@@ -21,6 +22,7 @@ related_roles:
   - designer
   - founder
 ---
+-->
 
 # 📋 产品经理
 

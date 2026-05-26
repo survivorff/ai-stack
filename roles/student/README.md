@@ -1,3 +1,4 @@
+<!--
 ---
 type: role
 slug: student
@@ -20,6 +21,7 @@ related_roles:
   - educator
   - developer
 ---
+-->
 
 # 🎓 学生 / 学习者
 

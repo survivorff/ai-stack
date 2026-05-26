@@ -1,3 +1,4 @@
+<!--
 ---
 type: role
 slug: founder
@@ -23,6 +24,7 @@ related_roles:
   - creator
   - developer
 ---
+-->
 
 # 🚀 创业者 / 一人公司
 

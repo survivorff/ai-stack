@@ -1,3 +1,4 @@
+<!--
 ---
 type: tool
 slug: claude
@@ -45,6 +46,7 @@ status: verified
 last_verified: 2026-05-22
 next_review: 2026-08-22
 ---
+-->
 
 # Claude
 
