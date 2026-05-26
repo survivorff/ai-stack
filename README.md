@@ -1,172 +1,177 @@
-# AI Stack 🛠️
+# 🛠 AI Stack
 
-> **一个程序员的 AI 工具 Tier List。每月更新一次。**
-> **不是最全的列表,是最实用的判断。中文优先,标国内可用性,带真实使用账单。**
+> **不同职业、不同场景下,AI 工具到底该怎么用。**
+> 中文优先 · 标注国内可用性 · 月度更新 · 有立场不中立。
 
----
-
-[![Last Updated](https://img.shields.io/badge/Last_Updated-2026--05-blue?style=flat-square)](./CHANGELOG.md)
-[![Categories](https://img.shields.io/badge/Categories-12-purple?style=flat-square)](#目录)
-[![Tools Curated](https://img.shields.io/badge/Tools-100+_Tier_Listed-green?style=flat-square)](#)
+[![Last Update](https://img.shields.io/badge/Updated-2026--05-blue?style=flat-square)](./meta/CHANGELOG.md)
 [![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-orange?style=flat-square)](./LICENSE)
 
 ---
 
-## 它和别的 awesome-ai-tools 仓库有什么不同
+## 🎯 30 秒找到你要的(三种入口)
 
-| 别的列表 | 这里 |
-|---------|------|
-| 列出 7000+ 工具,你看完都不知道选哪个 | **每个分类只 Tier 评级头部 5-10 个** |
-| 全英文,海外 SaaS 堆砌 | **中文优先 + 标"国内可用性"** |
-| 一年没更新过 | **每月更新一次,GitHub Releases 看 Diff** |
-| 都是营销描述 | **每个工具有"真实使用频次"和"它不擅长什么"** |
-| 看完不知道这个月该用啥 | **"这个月我在用什么 + 花了多少钱"** |
+### 入口 1:我是谁?
 
-**核心承诺**: 这里列的每一个 S/A 级工具,我都至少用过 1 个月。
-
----
-
-## ⭐ 起手级:我每天必开的 4 个
-
-最小可用工具栈,能让一个普通开发者直接进入 AI 编程时代。
-
-| # | 工具 | 用途 | Tier | 国内可用 | 价格 |
-|---|------|------|:---:|:---:|------|
-| 1 | [Claude Code](./categories/coding/claude-code.md) | 长任务、多文件重构 | **S** | 🟡 需自配 | $17-100/mo |
-| 2 | [Cursor](./categories/coding/cursor.md) | 主 IDE、即时补全 | **S** | 🟢 直接可用 | $20/mo |
-| 3 | [Kiro](./categories/coding/kiro.md) | Spec 驱动新功能开发 | **A** | 🟢 直接可用 | 免费/付费 |
-| 4 | [豆包/通义/Kimi](./categories/chat-zh/) | 通用问答(国产替代) | **A** | 🟢 直接可用 | 免费起 |
-
-> 完整工具栈见各分类。这只是"程序员起手包"。
+| 角色 | 痛点举例 | 入口 |
+|------|---------|------|
+| 💻 程序员 / 工程师 | 写代码、debug、读老项目、写文档 | [→ developer](./roles/developer/) |
+| 📋 产品经理 | 写 PRD、用户调研、竞品分析 | [→ product-manager](./roles/product-manager/) |
+| 🎨 UI/UX 设计师 | 概念稿、配图、Logo、原型 | [→ designer](./roles/designer/) |
+| 📣 运营 / 营销 | 内容、文案、SEO、数据 | [→ marketer](./roles/marketer/) |
+| 🎬 自媒体 / 创作者 | 脚本、视频、配音、封面 | [→ creator](./roles/creator/) |
+| 🚀 创业者 / 一人公司 | BP、市场分析、法务 | [→ founder](./roles/founder/) |
+| 💼 职场白领 / 办公 | PPT、会议纪要、邮件 | [→ office-worker](./roles/office-worker/) |
+| 🎓 学生 / 学习者 | 论文、读书、刷题 | [→ student](./roles/student/) |
+| 👨‍🏫 教师 / 教育者 | 教案、批改、课件 | [→ educator](./roles/educator/) |
 
 ---
 
-## 📂 目录(12 大垂类)
+### 入口 2:我要做什么?
 
-### 🛠 编程开发
+跨角色的高频场景 → [所有场景索引](./scenarios/)
 
-| 分类 | 头部 S/A 级 | 路径 |
-|------|------------|------|
-| **AI 代码助手** | Cursor · Claude Code · Windsurf · Copilot | [→ coding/](./categories/coding/) |
-| **Agent / 自动化** | Kiro · OpenClaw · Devin · Aider | [→ ai-agent/](./categories/ai-agent/) |
-
-### 💬 通用对话
-
-| 分类 | 头部 S/A 级 | 路径 |
-|------|------------|------|
-| **海外大模型** | ChatGPT · Claude · Gemini · Grok | [→ chat-en/](./categories/chat-en/) |
-| **国产大模型** | 豆包 · Kimi · 通义 · 智谱 · DeepSeek | [→ chat-zh/](./categories/chat-zh/) |
-
-### 🎨 内容创作
-
-| 分类 | 头部 S/A 级 | 路径 |
-|------|------------|------|
-| **AI 写作** | Claude · Jasper · Notion AI | [→ writing/](./categories/writing/) |
-| **AI 画图** | Midjourney · FLUX · Ideogram · Nano Banana Pro | [→ image-gen/](./categories/image-gen/) |
-| **AI 视频** | Veo 3.1 · Sora 2 · Runway · Kling | [→ video-gen/](./categories/video-gen/) |
-| **AI PPT** | Gamma · Tome · 美图秀秀 AI | [→ ppt/](./categories/ppt/) |
-| **AI 音频** | ElevenLabs · Suno · 海螺 · Udio | [→ audio/](./categories/audio/) |
-
-### 📚 知识与研究
-
-| 分类 | 头部 S/A 级 | 路径 |
-|------|------------|------|
-| **AI 笔记** | NotebookLM · Mem · Reflect · Tana · 飞书智能伙伴 | [→ notes/](./categories/notes/) |
-| **AI 搜索研究** | Perplexity · ChatGPT Search · Felo · 秘塔 | [→ research/](./categories/research/) |
-| **AI 阅读** | NotebookLM · Recall · Heptabase | [→ reading/](./categories/reading/) |
-
-### 🔬 专业垂类
-
-| 分类 | 头部 S/A 级 | 路径 |
-|------|------------|------|
-| **AI 翻译** | DeepL · 沉浸式翻译 · 沙拉查词 | [→ translation/](./categories/translation/) |
-| **AI 设计** | Figma AI · Magic Patterns · Galileo | [→ design/](./categories/design/) |
-| **AI 数据分析** | ChatGPT Code Interpreter · Hex AI · Julius | [→ data/](./categories/data/) |
-| **AI 学习** | Khanmigo · Duolingo Max · 多邻国 | [→ learning/](./categories/learning/) |
+热门:
+- [📄 写 PRD / 需求文档](./scenarios/prd-writing.md)
+- [📊 做 PPT / 演示](./scenarios/making-ppt.md)
+- [🎬 做封面图 / 营销图](./scenarios/cover-image.md)
+- [🔍 快速消化新领域](./scenarios/learning-new-domain.md)
+- [✍️ 写长文 / 博客](./scenarios/long-form-writing.md)
+- [🎙 制作短视频](./scenarios/short-video.md)
+- [💻 写代码 / 调试](./scenarios/writing-code.md)
+- [📚 读书 / 论文消化](./scenarios/paper-digesting.md)
 
 ---
 
-## 📊 我的真实账单
+### 入口 3:我要某个工具?
 
-> 每月更新。不藏。
+如果你已经知道工具名,直接看深度笔记:
 
-### 2026 年 5 月
+- [所有工具 Tier List](./meta/TIER-LIST.md)
+- [按工具类型分类](./tools/)
+- [国内可用性总表](./meta/CHINA-AVAILABILITY.md)
+
+---
+
+## 🧭 仓库逻辑(三层信息架构)
 
 ```
-─── 我的 AI 工具月度账单 ────────────
-  Claude (Pro+API)       ¥720   ← 最值钱
-  Cursor (Pro)            ¥150
-  ChatGPT (Plus)         ¥150
-  豆包 / 通义 / Kimi      ¥0    ← 国内首选,免费够用
-  Midjourney              ¥220
-  Veo / Sora API         ¥350   ← 偶尔用
-  ─────────────────────────
-  总计                  ¥1590
-─────────────────────────────────
+        Roles 角色          ← 我是谁
+            ↓
+       Scenarios 场景       ← 我要做什么
+            ↓
+   Tools / Workflows        ← 用什么工具(组合)
 ```
 
-[完整账单史和分类拆解 →](./BUDGET.md)
+**核心承诺**:
+- 角色页**不直接列工具**,只索引场景
+- 场景页**给完整解决方案**(工具组合 + prompt 模板)
+- 工具页是**单个工具深度**的唯一来源
+
+完整治理见 [GOVERNANCE.md](./GOVERNANCE.md)。
+
+---
+
+## 🔥 这个仓库和别的有什么不同
+
+| 别的列表 | ai-stack |
+|---------|---------|
+| 按"工具类型"分类(coding/writing/...) | **按"职业 + 场景痛点"分类** |
+| 工具堆砌 5000+ | **每个分类只 Tier 头部 + 边界清楚** |
+| 全英文,海外为主 | **中文优先 + 标国内可用性** |
+| 写一次没人维护 | **月度发版,公开 review 节奏** |
+| 营销描述 | **每个工具必有"它不擅长什么"字段** |
+| 看完不知道怎么落地 | **场景级"工具组合工作流"** |
 
 ---
 
 ## 🔄 月度更新
 
-这个仓库**每月一次大更新**,看 [CHANGELOG.md](./CHANGELOG.md) 了解每月变化。
+订阅:Watch 仓库 → Custom → Releases
 
-**最新更新**:
-- 2026-05:Claude Sonnet 4.7 升级,Cursor 推出 Composer Mode,首版上线
+每月 1 号发一个 `v2026.MM` Release,内容:
+- 新增内容
+- Tier 调整(理由公开)
+- 工具死亡名单(进 `_graveyard/`)
+- 过期内容清理
 
-订阅:Watch 仓库 → Custom → Releases。每月一次,不打扰。
-
----
-
-## 🎯 怎么用这份列表
-
-### 如果你是小白
-
-1. 看 ⭐ "起手 4 件套",从这里开始就够了
-2. 一个月用熟了,看 [📂 目录](#-目录-12-大垂类) 找你需要的垂类
-3. 不要想"全用",**最多 5 个工具**就够了
-
-### 如果你是程序员
-
-1. 看 [coding/](./categories/coding/) 和 [ai-agent/](./categories/ai-agent/),这是核心战场
-2. 看 [我的账单](./BUDGET.md),理性评估投入产出
-3. 直接看 [Tier List](./TIER-LIST.md),只看 S/A 级别
-
-### 如果你做内容
-
-1. 重点看 [writing/](./categories/writing/) [image-gen/](./categories/image-gen/) [video-gen/](./categories/video-gen/)
-2. 看 [WORKFLOWS.md](./WORKFLOWS.md) 里"内容流水线"案例
-3. 学会"工具组合",而不是单个工具
+完整 [CHANGELOG.md](./meta/CHANGELOG.md)
 
 ---
 
-## 🤝 贡献
+## 🤝 怎么参与
 
-PR 欢迎,但有条件:
+> 这是一个**有立场的知识库**,贡献门槛比一般 awesome list 高。
 
-- ✅ **必须真实用过**(描述工具时要有"我用了它做了什么"的具体说明)
-- ✅ **必须标国内可用性**(🟢 直接可用 / 🟡 需要自配 / 🔴 不可用)
-- ❌ **不接受营销描述**(不接受官方文档复制粘贴)
-- ❌ **不接受未上线工具**(必须公开可用)
+- **开 Issue**:推荐工具 / 提议新角色 / 报告过时内容
+- **开 PR**:加新工具 / 写新场景 / 完善已有内容(必须用 `_templates/` 里的模板)
+- **赞助 / 反馈**:暂不开放,让内容先长稳定
 
-详见 [CONTRIBUTING.md](./CONTRIBUTING.md)
+详见 [CONTRIBUTING.md](./CONTRIBUTING.md) 和 [GOVERNANCE.md](./GOVERNANCE.md)
 
 ---
 
-## 📜 许可
+## 📂 完整目录
+
+```
+ai-stack/
+├── README.md            # 本页
+├── GOVERNANCE.md        # 项目治理(怎么持续运转)
+├── CONTRIBUTING.md      # 贡献者指南
+├── LICENSE
+│
+├── roles/               # 9 大角色入口
+│   ├── developer/
+│   ├── product-manager/
+│   ├── designer/
+│   ├── marketer/
+│   ├── creator/
+│   ├── founder/
+│   ├── office-worker/
+│   ├── student/
+│   └── educator/
+│
+├── scenarios/           # 跨角色场景(按"我要做什么"找)
+│   └── *.md
+│
+├── tools/               # 工具深度笔记
+│   ├── chat-assistant/  # 对话助手(Claude / GPT / Gemini / 国产)
+│   ├── coding/          # 编程
+│   ├── image-gen/       # 文生图
+│   ├── video-gen/       # 文生视频
+│   ├── audio/           # 音频 / 配音 / 音乐
+│   ├── writing/         # 长文写作
+│   ├── notes/           # 笔记 / 第二大脑
+│   ├── research/        # 搜索 / 研究
+│   ├── reading/         # 阅读 / 论文消化
+│   ├── ppt/             # 演示文稿
+│   ├── design/          # 设计
+│   ├── translation/     # 翻译
+│   ├── data/            # 数据分析
+│   ├── ai-agent/        # Agent / 自动化
+│   └── learning/        # 学习
+│
+├── workflows/           # 工具组合的完整工作流
+│   └── *.md
+│
+├── meta/                # 元数据
+│   ├── SCHEMA.md        # 内容元数据规范
+│   ├── TIER-LIST.md     # 全 Tier 速查
+│   ├── CHANGELOG.md     # 月度更新
+│   ├── DECISIONS.md     # 架构决策记录
+│   └── CHINA-AVAILABILITY.md   # 国内可用速查
+│
+├── _templates/          # 内容模板(写新内容必看)
+├── _archive/            # 归档的旧版本
+├── _graveyard/          # 已死工具档案
+└── scripts/             # 校验脚本
+```
+
+---
+
+## 📜 License
 
 [CC BY-SA 4.0](./LICENSE) — 自由分享和改编,需注明出处。
 
 ---
 
-## 📡 关注更新
-
-- ⭐ Star 仓库
-- 👀 Watch → Custom → Releases(每月通知)
-- 📝 [博客 blog.frankfu.cloud](https://blog.frankfu.cloud)
-
----
-
-<sub>**Disclaimer**: Tier 评级是个人观点,基于个人使用经验和工程视角。不是商业评测,不接受厂商赞助。每个工具评级会随版本迭代变化。</sub>
+<sub>**Disclaimer**:Tier 评级和推荐基于个人经验和工程视角。不接受厂商赞助,不挂 affiliate。每个工具评级会随版本迭代变化,以 frontmatter 的 `last_verified` 为准。</sub>

@@ -3,8 +3,9 @@ node_modules/
 .env
 .env.local
 
-# 战略备忘不公开
-STRATEGY.md
+# 内部备忘不公开
+INTERNAL.md
+PRIVATE-NOTES.md
 
 # 草稿
 **/_drafts/
