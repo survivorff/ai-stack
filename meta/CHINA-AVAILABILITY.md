@@ -17,9 +17,19 @@
 
 ## 🟢 直接可用(零配置)
 
-### 国产工具
+### 国产基础模型(全部 🟢,详情见各工具页)
 
-- 豆包 / 通义千问 / Kimi / DeepSeek / 智谱 / 文心一言 / 腾讯混元 / Minimax
+- **[DeepSeek V4 / R1.5](../tools/foundation-models/deepseek.md)** — 性价比 + 推理之王
+- **[Kimi K2.5](../tools/foundation-models/kimi.md)** — 长文档 / Agent
+- **[豆包 Doubao 1.6](../tools/foundation-models/doubao.md)** — 移动端 / 语音 / 多模态
+- **[GLM-5(智谱)](../tools/foundation-models/glm.md)** — 政务 / 学术 / 开源
+- **[通义 Qwen 3.5](../tools/foundation-models/tongyi.md)** — 阿里生态 / 海外开源
+- **[MiniMax / 海螺](../tools/foundation-models/minimax.md)** — TTS / Hailuo 视频
+- **[文心一言](../tools/foundation-models/wenxin.md)** — 百度生态(B+ Tier)
+- **[腾讯混元 / 元宝](../tools/foundation-models/hunyuan.md)** — 微信生态(B+ Tier)
+
+### 国产工具(其他)
+
 - 通义灵码 / 字节豆包代码模型 / 文心快码
 - 即梦 / 文心一格 / 通义万相
 - Kling / Hailuo / Seedance / 即梦视频
@@ -54,12 +64,13 @@
 
 ### 必须代理 + 国际卡
 
-- Claude / Claude Code(Anthropic 严格地区限制)
-- ChatGPT / OpenAI(2024 后地区检测严)
+- **[Claude / Claude Code](../tools/foundation-models/claude.md)**(Anthropic 严格地区限制 + 2026-02 蒸馏争议后进一步收紧)
+- **[ChatGPT / OpenAI](../tools/foundation-models/chatgpt.md)**(可自配,Pro 用户 + 稳定代理可用)
+- **[Gemini](../tools/foundation-models/gemini.md)**(Google 服务全套,海外手机号 + 海外网络 + AI Studio 免费 API 可玩)
 - Midjourney(Discord + Stripe)
 - Sora 2(OpenAI 系)
 - Perplexity Pro
-- Veo / Gemini Pro / Google AI Studio
+- Veo / Runway / Pika(海外视频生成)
 - Mem / Reflect
 
 ### 部分可用
@@ -73,7 +84,7 @@
 
 ## 🔴 不可用 / 强烈不推荐
 
-- Grok(X 服务,国内访问极不稳)
+- **[Grok(xAI)](../tools/foundation-models/grok.md)** — 三重门:大陆 IP 屏蔽 + X 账号被封 + 海外卡。国内用户**直接跳过**,X 实时数据这条对你也用不上。
 - 部分高敏感工具(根据时事变化)
 
 ---
@@ -104,4 +115,4 @@
 - 每月跟随 release 一起更新
 - 政策 / 工具大变化时立刻更新
 
-**Last Updated**: 2026-05-22
+**Last Updated**: 2026-05-26

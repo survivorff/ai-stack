@@ -4,6 +4,45 @@
 
 ---
 
+## [v2026.05.1] - 2026-05-26(增量更新)
+
+### 🆕 新增内容
+
+**基础模型分类完整 v1**(`tools/foundation-models/`):
+- ✅ [claude.md](../tools/foundation-models/claude.md) — Anthropic Claude(Opus / Sonnet 4.7,1M 上下文)
+- ✅ [chatgpt.md](../tools/foundation-models/chatgpt.md) — OpenAI ChatGPT(GPT-5 / Pro / mini)
+- ✅ [gemini.md](../tools/foundation-models/gemini.md) — Google Gemini 3 Pro
+- ✅ [grok.md](../tools/foundation-models/grok.md) — xAI Grok 4
+- ✅ [deepseek.md](../tools/foundation-models/deepseek.md) — DeepSeek V4 + R1.5
+- ✅ [kimi.md](../tools/foundation-models/kimi.md) — Moonshot Kimi K2.5
+- ✅ [glm.md](../tools/foundation-models/glm.md) — 智谱 GLM-5
+- ✅ [tongyi.md](../tools/foundation-models/tongyi.md) — 阿里 通义千问 Qwen 3.5
+- ✅ [doubao.md](../tools/foundation-models/doubao.md) — 字节 豆包 1.6
+- ✅ [minimax.md](../tools/foundation-models/minimax.md) — MiniMax / 海螺 / Hailuo
+- ✅ [wenxin.md](../tools/foundation-models/wenxin.md) — 百度 文心 ERNIE 4.5
+- ✅ [hunyuan.md](../tools/foundation-models/hunyuan.md) — 腾讯 混元 / 元宝
+
+**总计 12 篇模型深度笔记,~6000 行内容**。
+每篇都包含:Tier 评级理由、最适合做什么、**不擅长什么**(必填)、真实使用 tips、价格分析、版本变化追踪、国内可用性。
+
+### 🔧 改动
+
+- 所有内容文件 frontmatter 包入 `<!-- ... -->`,GitHub 不再渲染丑表格
+- 新增 `scripts/hide-frontmatter.mjs`:批量包注释脚本
+- `_templates/tool-template.md` 从硬模板改为思路指引(按工具类型给侧重)
+- `meta/SCHEMA.md` 加入"frontmatter 必须包注释"规则
+
+### 📊 进度统计
+
+```
+角色:        9 (1 完整 / 8 骨架)
+场景:        ~40 (1 完整 / 39 待写)
+工具笔记:    12 (foundation-models 分类完整 v1)
+工作流:      0 (待 6 月开始)
+```
+
+---
+
 ## [v2026.05] - 2026-05-22(初版)
 
 ### 🏗 架构

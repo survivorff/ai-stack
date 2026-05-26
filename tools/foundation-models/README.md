@@ -105,19 +105,20 @@ DeepSeek
 
 ## 我盯着的工具
 
-(待详写,见各模型页)
+- [x] [claude.md](./claude.md) — Claude(Web + Code + API 三种形态)
+- [x] [chatgpt.md](./chatgpt.md) — ChatGPT(GPT-5.x)
+- [x] [gemini.md](./gemini.md) — Gemini 3 Pro
+- [x] [grok.md](./grok.md) — Grok(xAI)
+- [x] [deepseek.md](./deepseek.md) — DeepSeek V4
+- [x] [kimi.md](./kimi.md) — Kimi K2.5(Moonshot)
+- [x] [glm.md](./glm.md) — GLM-5(智谱)
+- [x] [tongyi.md](./tongyi.md) — 通义千问(Qwen)
+- [x] [doubao.md](./doubao.md) — 豆包(字节)
+- [x] [minimax.md](./minimax.md) — MiniMax(海螺 / Hailuo)
+- [x] [wenxin.md](./wenxin.md) — 文心一言(百度)
+- [x] [hunyuan.md](./hunyuan.md) — 腾讯混元
 
-- [ ] [claude.md](./claude.md) — Claude(Web + Code + API 三种形态)
-- [ ] [chatgpt.md](./chatgpt.md) — ChatGPT(GPT-5.x)
-- [ ] [gemini.md](./gemini.md) — Gemini 3 Pro
-- [ ] [deepseek.md](./deepseek.md) — DeepSeek V4
-- [ ] [kimi.md](./kimi.md) — Kimi K2.5(Moonshot)
-- [ ] [glm.md](./glm.md) — GLM-5(智谱)
-- [ ] [tongyi.md](./tongyi.md) — Qwen 系列
-- [ ] [doubao.md](./doubao.md) — 豆包
-- [ ] [minimax.md](./minimax.md) — Minimax
-- [ ] [wenxin.md](./wenxin.md) — 文心
-- [ ] [hunyuan.md](./hunyuan.md) — 腾讯混元
+> 上述 12 篇 = 2026-05 该分类 v1 内容。后续根据模型迭代月度更新。
 
 ---
 

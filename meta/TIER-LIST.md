@@ -1,7 +1,7 @@
 # 🏆 全 Tier 速查
 
 > 所有工具的 Tier 评级一览。详细笔记在各分类目录下。
-> **当前版本:v2026.05(初版,90% 工具笔记待填写)**
+> **当前版本:v2026.05.1(基础模型分类完整 v1)**
 
 ---
 
@@ -23,24 +23,23 @@
 
 ### 基础模型
 
-| 模型 | 国内 | 用途 |
-|------|:---:|------|
-| Claude Sonnet 4.7 | 🟡 | 写作 + 编程 + 长上下文 |
-| GPT-5.x | 🟡 | 通用 + 多模态 |
-| DeepSeek V4 | 🟢 | 国产首选,推理 + 代码强 |
+| 模型 | 国内 | 用途 | 详情 |
+|------|:---:|------|------|
+| **Claude(Sonnet/Opus 4.7)** | 🟡 | 写作 + 编程 + 1M 上下文 | [→](../tools/foundation-models/claude.md) |
+| **GPT-5.x** | 🟡 | 通用 + 多模态 + 生态 | [→](../tools/foundation-models/chatgpt.md) |
+| **DeepSeek V4 / R1.5** | 🟢 | 国产首选,推理 + 代码 + 性价比 | [→](../tools/foundation-models/deepseek.md) |
 
-### 编程产品
+### 编程产品(待详写)
 
 | 工具 | 类型 | 国内 | 用途 |
 |------|------|:---:|------|
 | Cursor | IDE | 🟢 | 主 IDE,日常 90% 编程 |
 | Claude Code | Coding Agent | 🟡 | 长任务编程 |
 
-### 其他
+### 其他(待详写)
 
 | 工具 | 分类 | 国内 | 用途 |
 |------|------|:---:|------|
-| 豆包 | foundation-models | 🟢 | 国内即时问答(App 体验) |
 | Midjourney | image-gen | 🟡 | 艺术风格 |
 | Suno | audio | 🟡 | 音乐生成 |
 
@@ -50,22 +49,21 @@
 
 ### 基础模型(海外)
 
-| 模型 | 国内 | 用途 |
-|------|:---:|------|
-| Gemini 3 Pro | 🟡 | 长上下文 + 搜索深度集成 |
+| 模型 | Tier | 国内 | 用途 | 详情 |
+|------|:---:|:---:|------|------|
+| **Gemini 3 Pro** | A+ | 🟡 | 1M 上下文 + Deep Research | [→](../tools/foundation-models/gemini.md) |
 
 ### 基础模型(国产)
 
-| 模型 | 国内 | 用途 |
-|------|:---:|------|
-| Kimi K2.5 (A+) | 🟢 | 长文档 / agent |
-| GLM-5(智谱) | 🟢 | 开源派代表 |
-| 通义 Qwen3.5-Max | 🟢 | 工作场景 |
-| Minimax M2.5 | 🟢 | 多模态 + 视频 |
-| 文心 4.5 | 🟢 | 百度生态 |
-| 腾讯混元 | 🟢 | 腾讯生态 |
+| 模型 | Tier | 国内 | 用途 | 详情 |
+|------|:---:|:---:|------|------|
+| **Kimi K2.5** | A+ | 🟢 | 长文档之王(2M context) | [→](../tools/foundation-models/kimi.md) |
+| **GLM-5(智谱)** | A | 🟢 | 政务 / 学术 / 开源代表 | [→](../tools/foundation-models/glm.md) |
+| **通义 Qwen3.5-Max** | A | 🟢 | 阿里生态 / 海外开源影响 | [→](../tools/foundation-models/tongyi.md) |
+| **豆包(字节)1.6** | A | 🟢 | 移动端 + 语音 + 多模态 | [→](../tools/foundation-models/doubao.md) |
+| **MiniMax / 海螺** | A | 🟢 | TTS + Hailuo 视频 + 出海 | [→](../tools/foundation-models/minimax.md) |
 
-### IDE
+### IDE(待详写)
 
 | 工具 | 国内 | 用途 |
 |------|:---:|------|
@@ -73,14 +71,14 @@
 | Kiro | 🟢 | Spec 驱动 |
 | Trae(字节) | 🟢 | 国产首选,中文友好 |
 
-### Coding Agent
+### Coding Agent(待详写)
 
 | 工具 | 国内 | 用途 |
 |------|:---:|------|
 | Codex CLI (A+) | 🟡 | OpenAI 重启 |
 | Aider | 🟢 | 开源 + git 集成 |
 
-### 补全(Code Completion)
+### 补全(待详写)
 
 | 工具 | 国内 | 用途 |
 |------|:---:|------|
@@ -88,69 +86,23 @@
 | 通义灵码 | 🟢 | 国产首选,免费 |
 | Tabnine | 🟢 | 私有部署友好 |
 
-### Image
+### Image / Video / Audio / 其他(待详写)
 
-| 工具 | 国内 | 用途 |
-|------|:---:|------|
-| FLUX Pro | 🟢 | 真实感 |
-| Ideogram 3 | 🟢 | 文字渲染 |
-| Nano Banana Pro | 🟡 | 4K 写实 |
-| 即梦 | 🟢 | 国产首选 |
-
-### Video
-
-| 工具 | 国内 | 用途 |
-|------|:---:|------|
-| Veo 3.1 | 🟡 | YouTube / 营销 |
-| Sora 2 | 🟡 | 故事 / 电影感 |
-| Kling 3.0 | 🟢 | 国产视频之王 |
-| Runway Gen-4 | 🟡 | 镜头控制 |
-| HeyGen | 🟡 | 数字人 |
-
-### Notes / Research
-
-| 工具 | 国内 | 用途 |
-|------|:---:|------|
-| NotebookLM (A+) | 🟢 | 资料消化 |
-| Tana | 🟢 | 知识图谱 |
-| Mem | 🟡 | AI 优先笔记 |
-| 飞书智能伙伴 | 🟢 | 国内办公 |
-| Perplexity (A+) | 🟡 | 海外 AI 搜索 |
-| 秘塔 AI 搜索 | 🟢 | 国内 AI 搜索 |
-
-### Office / Writing
-
-| 工具 | 国内 | 用途 |
-|------|:---:|------|
-| Gamma | 🟢 | AI PPT |
-| 美图 AI PPT | 🟢 | 国产 PPT |
-| Notion AI | 🟢 | 笔记内嵌 |
-
-### Audio
-
-| 工具 | 国内 | 用途 |
-|------|:---:|------|
-| ElevenLabs | 🟡 | 语音克隆 |
-| Udio | 🟡 | 音乐生成备选 |
-| Krisp | 🟢 | 实时降噪 |
-| Adobe Podcast | 🟢 | 音频清理 |
-| 海螺 AI | 🟢 | 国产 TTS |
-
-### Translation / Reading
-
-| 工具 | 国内 | 用途 |
-|------|:---:|------|
-| DeepL | 🟢 | 长文翻译 |
-| 沉浸式翻译 | 🟢 | 网页对照 |
-| Readwise | 🟢 | Kindle 高亮 |
+(略,见对应分类 README)
 
 ---
 
 ## 🥈 B / B+ Tier(特定场景)
 
-(列得多,大部分是 A 级的"备选")
+### 基础模型
 
-待详写……
+| 模型 | Tier | 国内 | 用途 | 详情 |
+|------|:---:|:---:|------|------|
+| **Grok 4(xAI)** | B+ | 🔴 | X 实时数据 + 低拒绝度 | [→](../tools/foundation-models/grok.md) |
+| **文心一言(ERNIE)** | B+ | 🟢 | 百度生态 / 政企渠道 | [→](../tools/foundation-models/wenxin.md) |
+| **腾讯混元 / 元宝** | B+ | 🟢 | 腾讯生态 / 元宝 App | [→](../tools/foundation-models/hunyuan.md) |
+
+(其他类型待详写……)
 
 ---
 
@@ -175,7 +127,7 @@
 ## 📅 这份 Tier List 的更新
 
 每月一次,跟随 monthly release。
-- 2026-05:**初版**(本月)
-- 2026-06:补 coding 详细笔记 + 6 个工具页
+- 2026-05:初版,基础模型 12 篇 v1 完整
+- 2026-06:补 Coding Agent / IDE / 补全分类详细笔记
 
 [← 回到 README](../README.md)
