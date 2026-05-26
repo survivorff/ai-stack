@@ -26,13 +26,20 @@
 
 | 工具 | Tier | 国内 | 月费 | 底层模型 | 适合谁 |
 |------|:---:|:---:|------|---------|--------|
-| [Cursor](./cursor.md) | **S** | 🟢 | $20-200 | 多选(Claude/GPT/Gemini) | 主流首选 |
-| [Windsurf](./windsurf.md) | **A+** | 🟢 | $15-20 | 多选 | Cursor 平替 + JetBrains |
-| [Kiro](./kiro.md) | **A** | 🟢 | 免费/付费 | 多选 | Spec 驱动新功能 |
-| [Trae(字节)](./trae.md) | **A** | 🟢 | 免费 | DeepSeek + 通义 + Claude | 国产首选,中文体验 |
-| [Zed](./zed.md) | **B+** | 🟢 | 免费/付费 | 多选 | 性能党(Rust 写的) |
-| [JetBrains AI](./jetbrains-ai.md) | **B+** | 🟢 | $10/mo | 多选 | JetBrains 老用户 |
-| [Codeium](./codeium.md) | **B** | 🟢 | 免费 | 自家 | 不愿付费党 |
+| [Cursor](./cursor.md) | **S** | 🟢 | $20-200 | 多选(Claude/GPT/Gemini/DeepSeek) | 主流首选 |
+| [Windsurf](./windsurf.md) | **A+** | 🟢 | $15-60 | 多选 | Cursor 平替 + JetBrains 唯一选 |
+| [Kiro](./kiro.md) | **A** | 🟢 | $0-39 | Claude / Bedrock | Spec 驱动 / 中大功能 |
+| [Trae(字节)](./trae.md) | **A-** | 🟢 | 免费(推广期) | 豆包 + DeepSeek + 多模型 | 国产首选,中文体验 |
+
+> 详细笔记 → 各工具页
+
+---
+
+## 待写工具(尚未详细评估)
+
+- Zed(自研 Rust 编辑器,性能党)
+- JetBrains AI Assistant(IntelliJ 老用户)
+- Replit Agent(在线 IDE,初学者向)
 
 ---
 
@@ -74,16 +81,12 @@ Coding Agent(Claude Code)|  AI 自主跑
 
 ---
 
-## 我盯着的工具(待详写)
+## 我盯着的工具
 
-按优先级排:
-
-- [ ] [cursor.md](./cursor.md) — 主流首选
-- [ ] [windsurf.md](./windsurf.md) — Cursor 平替
-- [ ] [kiro.md](./kiro.md) — Spec 驱动
-- [ ] [trae.md](./trae.md) — 国产首选(字节出品)
-- [ ] [zed.md](./zed.md)
-- [ ] [jetbrains-ai.md](./jetbrains-ai.md)
+- [x] [cursor.md](./cursor.md) — AI IDE 事实标准 (S)
+- [x] [windsurf.md](./windsurf.md) — Cursor 最强平替 (A+)
+- [x] [kiro.md](./kiro.md) — Spec 驱动 (A)
+- [x] [trae.md](./trae.md) — 国产首选,字节出品 (A-)
 
 ---
 
