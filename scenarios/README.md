@@ -24,12 +24,12 @@
 
 | 场景 | 主要角色 | 状态 |
 |------|---------|:---:|
-| [写 PRD / 需求文档](./prd-writing.md) | product-manager, founder | 🟡 |
+| [写 PRD / 需求文档](./prd-writing.md) | product-manager, founder | ✅ |
 | [用户调研访谈](./user-research.md) | product-manager | 🟡 |
 | [竞品分析](./competitor-analysis.md) | product-manager, founder | 🟡 |
 | [用户反馈整理](./feedback-synthesis.md) | product-manager | 🟡 |
 | [商业计划 / BP](./business-plan.md) | founder | 🟡 |
-| [市场调研](./market-research.md) | founder, marketer | 🟡 |
+| [市场调研](./market-research.md) | founder, marketer | ✅ |
 
 ### 🎨 设计 / 视觉
 
@@ -54,7 +54,7 @@
 
 | 场景 | 主要角色 | 状态 |
 |------|---------|:---:|
-| [做封面图](./cover-image.md) | creator, marketer | 🟡 |
+| [做封面图](./cover-image.md) | creator, marketer | ✅ |
 | [短视频脚本 + 制作](./short-video.md) | creator | 🟡 |
 | [配音 / TTS](./voice-over.md) | creator | 🟡 |
 | [生成音乐 / BGM](./music-generation.md) | creator | 🟡 |
@@ -63,7 +63,7 @@
 
 | 场景 | 主要角色 | 状态 |
 |------|---------|:---:|
-| [做 PPT / 演示](./making-ppt.md) | office-worker, marketer | 🟡 |
+| [做 PPT / 演示](./making-ppt.md) | office-worker, marketer | ✅ |
 | [会议纪要 / 总结](./meeting-notes.md) | office-worker | 🟡 |
 | [写邮件 / 邀请](./email-writing.md) | office-worker | 🟡 |
 | [Excel / 数据处理](./data-in-excel.md) | office-worker | 🟡 |
@@ -72,7 +72,7 @@
 
 | 场景 | 主要角色 | 状态 |
 |------|---------|:---:|
-| [快速消化新领域](./learning-new-domain.md) | student, developer, founder | 🟡 |
+| [快速消化新领域](./learning-new-domain.md) | student, developer, founder | ✅ |
 | [论文消化](./paper-digesting.md) | student, educator | 🟡 |
 | [读书笔记 + 知识管理](./reading-notes.md) | student | 🟡 |
 | [刷题 / 应试](./exam-prep.md) | student | 🟡 |
